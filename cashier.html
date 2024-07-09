@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VolunPerks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4C762;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 600px; /* Adjusted width for larger screens */
+            background-color: #F4C762;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px; /* Increased margin */
+        }
+        .header img {
+            width: 30px; /* Slightly larger user icon */
+            height: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px; /* Larger font size */
+        }
+        .header .notification {
+            width: 30px; /* Slightly larger notification icon */
+            height: 30px;
+            background-color: #FFA500;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #A0C080;
+            padding: 20px; /* Increased padding */
+            border-radius: 10px;
+            margin-bottom: 30px; /* Increased margin */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card .content {
+            flex-grow: 1;
+        }
+        .card .content h2 {
+            margin: 0;
+            font-size: 22px; /* Larger font size */
+        }
+        .card .icon {
+            background-color: #000000;
+            width: 30px; /* Slightly larger icon */
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+        .large-box {
+            background-color: #ffffff;
+            height: 180px; /* Increased height */
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px; /* Increased margin */
+        }
+        .large-box .icon {
+            background-color: #000000;
+            width: 30px; /* Slightly larger icon */
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+        .deals {
+            margin-bottom: 30px; /* Increased margin */
+        }
+        .deals h3 {
+            margin: 0;
+            font-size: 22px; /* Larger font size */
+            margin-bottom: 15px; /* Adjusted margin */
+        }
+        .deal-images {
+            display: flex;
+            justify-content: space-between;
+        }
+        .deal-images .image-box {
+            width: 150px; /* Larger image box */
+            height: 150px; /* Larger image box */
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .qr-scanner {
+            display: flex;
+            justify-content: center;
+        }
+        .qr-scanner .scanner {
+            width: 60px; /* Larger QR scanner */
+            height: 60px; /* Larger QR scanner */
+            background-color: #FF4500;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/30" alt="User"> <!-- Placeholder image adjusted -->
+            <h1>VolunPerks</h1>
+            <div class="notification">
+                <img src="https://via.placeholder.com/30/FFA500/FFFFFF?text=!" alt="Notification"> <!-- Placeholder image adjusted -->
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>View Offers</h2>
+            </div>
+            <div class="icon">&#9658;</div>
+        </div>
+        <div class="large-box">
+            <div class="icon">+</div>
+        </div>
+        <div class="deals">
+            <h3>OUR STORE DEALS</h3>
+            <div class="deal-images">
+                <div class="image-box"></div>
+                <div class="image-box"></div>
+            </div>
+        </div>
+        <div class="qr-scanner">
+            <div class="scanner">
+                <img src="https://via.placeholder.com/30/FF4500/FFFFFF?text=QR" alt="QR Scanner"> <!-- Placeholder image adjusted -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
