@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volunteer Home Page</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+        <style>
+            /* background */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            
+            /* screen */
+            .container {
+                background-color: #f5c57a;
+                width: auto;
+                height: auto;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /* screen header */
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            /* screen title */
+            .header h1 {
+                font-size: 24px;
+                margin: 0;
+            }
+
+            /* bell icon */
+            .notification {
+                font-size: 24px;
+                color: red;
+            }
+
+            /* points & coupons article */
+            .btn-custom {
+                background-color: #86a88e;
+                color: white;
+                padding: 15px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            .btn-custom:hover {
+                background-color: #77937c;
+            }
+            .btn-custom .main-text {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .btn-custom .sub-text {
+                font-size: 16px;
+            }
+            .btn-custom i {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+
+            /* calendar */
+            .btn-calendar {
+                background-color: #86a88e;
+                color: white;
+                padding: 15px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            .btn-calendar:hover {
+                background-color: #77937c;
+            }
+            .btn-calendar .main-text {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .btn-calendar .sub-text {
+                font-size: 16px;
+            }
+
+            .weekdays {
+                margin: 0;
+                padding: 10px 0;
+                
+            }
+            .weekdays li {
+                display: inline-block;
+                width: 13.6%;
+                text-align: center;
+            }
+            .days {
+                margin: 0;
+                padding: 0 0;
+            }
+            .days li {
+                display: inline-block;
+                width: 13.6%;
+                text-align: center;
+                margin-bottom: 5px;
+                font-size:12px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <i class="bi bi-person-circle user-icon"></i>
+                <h1>VolunPerks</h1>
+                <i class="bi bi-bell notification"></i>
+            </div>
+
+            <button class="btn btn-custom">
+                <div class="main-text">Volunteer Points</div>
+                <div class="sub-text">5000 points</div>
+                <i class="bi bi-arrow-right-circle"></i>
+            </button>
+
+            <button class="btn btn-custom">
+                <div class="main-text">Redeemed Coupons</div>
+                <div class="sub-text">View Available</div>
+                <i class="bi bi-arrow-right-circle"></i>
+            </button>
+
+            <button class="btn btn-calendar">
+                <div class="main-text">Volunteering Activities</div>
+                <div class="sub-text">August 2024</div>
+                <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                </ul>
+                <ul class="days">  
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+                <i class="bi bi-arrow-right-circle"></i>
+            </button>
+        </div>
+
+        
+    </body>
+</html>
+    
