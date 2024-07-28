@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organisation Admin Home Page</title>
-    <!-- Bootstrap CSS -->
+    <title>Organisation Admin Home Page</title>s
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
         body {
@@ -76,16 +74,22 @@
             <h1>VolunPerks</h1>
             <i class="bi bi-bell notification"></i>
         </div>
-        <button class="btn btn-custom">
-            <div class="main-text">QR Code</div>
-            <div class="sub-text">Generate QR Code</div>
-            <i class="bi bi-plus"></i>
-        </button>
-        <button class="btn btn-custom">
+        <a href="OrgAdminViewAct.php" class="btn btn-custom">
             <div class="main-text">Volunteering Activities</div>
-            <div class="sub-text">View / Edit / Publish</div>
+            <div class="sub-text">View</div>
+            <i class="bi bi-eye"></i>
+        </a>
+        <a href="edit_activities.html" class="btn btn-custom">
+            <div class="main-text">Volunteering Activities</div>
+            <div class="sub-text">Edit</div>
+            <i class="bi bi-pencil"></i>
+        </a>
+        <a href="publish_activities.html" class="btn btn-custom">
+            <div class="main-text">Volunteering Activities</div>
+            <div class="sub-text">Publish</div>
             <i class="bi bi-plus"></i>
-        </button>
+        </a>
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

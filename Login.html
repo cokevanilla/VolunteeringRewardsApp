@@ -14,57 +14,58 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: #fff;
+            background-color: #f5c57a;
         }
         .login-container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 30px;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 350px;
             color: #333;
         }
         .login-container h2 {
             text-align: center;
-            margin: 0 0 20px;
-            font-weight: 700;
+            margin: 0 0 15px;
+            font-size: 20px;
+            color: #333;
         }
         .login-container label {
+            font-size: 14px;
             font-weight: bold;
         }
         .login-container input,
         .login-container select {
             width: 100%;
-            padding: 12px;
+            padding: 10px;
+            border-radius: 5px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 10px;
         }
         .login-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
+            background-color: #86a88e;
             color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         .login-container button:hover {
-            background-color: #45a049;
+            background-color: #77937c;
         }
         .login-container input:focus,
         .login-container select:focus {
-            border-color: #007BFF;
-            box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+            border-color: #86a88e;
+            box-shadow: 0 0 8px rgba(134, 168, 142, 0.25);
             outline: none;
         }
         .login-container .text-center a {
-            color: #007BFF;
+            color: #86a88e;
             text-decoration: none;
         }
         .login-container .text-center a:hover {
@@ -94,7 +95,7 @@
                 </select>
             </div>
             <div class="d-grid gap-2">
-                <button type="submit" name="login" class="btn btn-primary">Login</button>
+                <button type="submit" name="login" class="btn">Login</button>
             </div>
             <p class="text-center mt-3">
                 Not a volunteer yet? <a href="register.php">Register</a> now!
