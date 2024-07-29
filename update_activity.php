@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $activity_id = $_POST['activity_id'];
+    $org_id = $_POST['org_id'];
     $org_name = $_POST['org_name'];
     $event_name = $_POST['event_name'];
     $event_date = $_POST['event_date'];
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $query = "UPDATE volunteering_activities 
               SET org_name='$org_name', event_name='$event_name', event_date='$event_date', event_time='$event_time', event_venue='$event_venue', points='$points', event_description='$event_description' 
-              WHERE activity_id='$activity_id'";
+              WHERE org_id='$org_id'";
 
     $result = mysqli_query($link, $query);
 
