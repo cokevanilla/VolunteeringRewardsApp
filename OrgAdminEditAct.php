@@ -39,7 +39,7 @@ mysqli_close($link);
         .container {
             background-color: #f5c57a;
             width: 100%; 
-            max-width: 500px;
+            max-width: 500px; 
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -121,6 +121,7 @@ mysqli_close($link);
                         <p><strong>Points:</strong> <?php echo htmlspecialchars($activity['points']); ?></p>
                         <p><strong>Description:</strong> <?php echo htmlspecialchars($activity['event_description']); ?></p>
                     </div>
+                    <a class="edit-link" href="edit_activity.php?org_id=<?php echo $activity['org_id']; ?>">Edit</a>
                 </div>
             </div>
         <?php } ?>

@@ -32,14 +32,14 @@ mysqli_close($link);
             padding: 20px;
             display: flex;
             justify-content: center;
-            align-items: flex-start; 
+            align-items: flex-start; /* Align to the top of the page */
             height: 100vh;
-            overflow-y: auto;
+            overflow-y: auto; /* Allow vertical scrolling if content overflows */
         }
         .container {
             background-color: #f5c57a;
-            width: 100%; 
-            max-width: 500px;
+            width: 100%; /* Full width */
+            max-width: 500px; /* Set a reasonable maximum width */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
