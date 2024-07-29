@@ -20,7 +20,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['role'])
     include "db.php";
 
     // Prepare and execute the SQL query
-    $stmt = $link->prepare("SELECT userID, username, password, role FROM users WHERE email=? AND role=?");
+    $stmt = $link->prepare("SELECT * FROM users WHERE email=? AND role=?");
     $stmt->bind_param("ss", $entered_email, $entered_role);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -30,7 +30,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['role'])
         $row = $result->fetch_assoc();
         
         // Verify the password using password_verify() if passwords are hashed
-        if (password_verify($entered_password, $row['password'])) {
+        if ($entered_password == $row['password']) {
             $_SESSION['username'] = $row['username'];
             $_SESSION['user_id'] = $row['userID'];
             $_SESSION['email'] = $entered_email;
@@ -41,13 +41,13 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['role'])
                 case 'volunteer':
                     header("Location: volunteerPage.html");
                     break;
-                case 'organisation admin':
+                case 'organisation-admin':
                     header("Location: OrgAdminHome.html");
                     break;
-                case 'event admin':
+                case 'event-admin':
                     header("Location: event_admin_dashboard.html");
                     break;
-                case 'retail admin':
+                case 'retail-admin':
                     header("Location: retail-admin.html");
                     break;
                 default:
