@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html"); // Redirect to login page if not logged in
+    header("Location: login.html"); 
     exit();
 }
 
@@ -45,14 +45,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 } else {
-    // Redirect if accessed directly without form submission
     header("Location: publish_activities.html");
     exit();
 }
 
-// Close the database connection
+
 mysqli_close($link);
 
-// Display the message
 echo $message;
 ?>
