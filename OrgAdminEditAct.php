@@ -2,7 +2,6 @@
 session_start();
 include "db.php";
 
-// Fetch data from the database
 $query = "SELECT * FROM volunteering_activities";
 $result = mysqli_query($link, $query);
 

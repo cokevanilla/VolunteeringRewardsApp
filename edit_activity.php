@@ -53,7 +53,7 @@ mysqli_close($link);
     <div class="container">
         <h2>Edit Activity</h2>
         <form action="update_activity.php" method="POST">
-            <input type="hidden" name="activity_id" value="<?php echo $activity['activity_id']; ?>">
+            <input type="hidden" name="org_id" value="<?php echo $activity['org_id']; ?>">
             <div class="form-group">
                 <label for="org_name">Organization Name:</label>
                 <input type="text" class="form-control" id="org_name" name="org_name" value="<?php echo htmlspecialchars($activity['org_name']); ?>" required>
